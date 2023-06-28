@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair:wght@300&family=Roboto+Slab:wght@300&family=Tilt+Prism&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+.outerbox{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(to top left, rgb(215, 238, 246), rgb(62, 199, 245)); */
+    /* background: linear-gradient(to top left, rgb(233, 199, 186), rgb(229, 150, 118)); */
+    background-image: url(/My-Project/images/form_bg.jpeg);
+    background-size: cover;
+    
+}
+
+.innerbox{
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    /* background-color: #ffffff09; */
+    background: linear-gradient(to top left, #ffffffff, #ffffff33);
+    backdrop-filter: 8px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 5px rgb(109, 245, 245);
+    z-index: 2;
+   
+}
+
+h1{
+    font-size: 2.5rem;
+    color: rgb(194, 146, 239);
+    /* outline: 5px black; */
+}
+
+.signup-header p{
+    font-size: 1.1rem;
+}
+
+.signup-body {
+    margin: 20px 0;
+}
+
+.signup-body p{
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.signup-body p label{
+    display: block;
+}
+
+.signup-body p input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(252, 158, 208);
+    border-radius: 4px;
+    font-size: 1rem ;
+    margin-top: 4px;
+}
+
+/* #submit {...} OR */
+.signup-body p input[type="submit"] {
+    background-color: rgb(124, 250, 250);
+    color: rgb(233, 9, 249);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.submit-btn{
+    padding: 2px 2px;
+}
+
+.signup-body p input[type="submit"]:hover{
+    background-color: rgb(3, 252, 252);
+}
+
+.box-2 {
+    width: 400px;
+}

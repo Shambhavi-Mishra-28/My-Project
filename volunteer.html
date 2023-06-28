@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+
+    
+    <div class="outerbox">
+        <div class="innerbox box-2">
+            <header class="signup-header">
+                <h1>Be the part of Change with Together for Good</h1>
+            </header>
+
+            <main class="signup-body">
+
+                <form action="#" onsubmit="submitVolunteer()" id="volForm">
+
+                    <label for="name">Full Name: </label><br>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="dob">Date of birth: </label><br>
+                    <input type="date" name="dob" id="dob"><br>
+            
+                    <label for="contact">Contact Number: </label><br>
+                    <input type="number" maxlength="10" minlength="10" id="contact" name="contact" required> <br>
+            
+                    <label for="email">Email: </label><br>
+                    <input type="email" name="email" id="email"><br><br>
+            
+                    <input type="submit" class="submit-btn">
+                    
+            
+                </form>
+
+            </main>
+
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("volForm").onsubmit = function() {
+            submitVolunteer();
+            return false; // Prevent default form submission
+        };
+    </script>
+</body>
+</html>

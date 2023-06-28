@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write to us form</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+
+    
+    <div class="outerbox">
+        <div class="innerbox">
+            <header class="signup-header">
+                <h1>Share your inspirational story here</h1>
+            </header>
+
+            <main class="signup-body">
+
+                <form action="#" id="story-form" onsubmit="submitRel()" >
+
+                    <label for="name">Full Name: </label><br>
+                    <input type="text" id="name" name="name" required><br>
+            
+                    <label for="title">Title: </label><br>
+                    <textarea name="title" id="title" cols="60" rows="3" placeholder="Add a title for your story"></textarea><br>
+                    
+            
+                    <label for="desc">Description: </label><br>
+                    <!-- <input type="text" id="desc" name="desc"><br> -->
+                    <textarea name="desc" id="desc" cols="80" rows="12" placeholder="Pen down your story here for everyone to read."></textarea><br>
+            
+                    <input type="submit" id="submit-story" class="submit-btn" >
+                    
+            
+                </form>
+
+            </main>
+
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("story-form").onsubmit = function() {
+            submitRel();
+            return false; // Prevent default form submission
+        };
+    </script>
+
+</body>
+</html>
