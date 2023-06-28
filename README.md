@@ -1,2 +1,2 @@
 # My-Project
-My NorCallHacks Project: Together for Good
+My Project: Together for Good
